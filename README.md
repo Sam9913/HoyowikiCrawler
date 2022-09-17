@@ -11,6 +11,7 @@ Crawler build by Python to crawl data from Hoyowiki website
 2. Basic Character crawler :white_check_mark:
 3. Character crawler 
    - Constellation crawler :white_check_mark:
+   - Talent crawler :white_check_mark:
 4. List crawler :ballot_box_with_check:
 5. Detail crawler :ballot_box_with_check:
 6. Map filter crawler :ballot_box_with_check:
@@ -21,4 +22,4 @@ Crawler build by Python to crawl data from Hoyowiki website
 >> Character - 2 ; Weapon - 4 ; Artifact - 5 ; Monsters - 7 ; Resources - 9
 
 ## Update
-2022-09-17 Get notify that 403 get on listing api, update existing crawler to handle that
+*2022-09-17* : Get notify that 403 get on listing api, update existing crawler to handle that
