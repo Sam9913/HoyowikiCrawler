@@ -27,11 +27,15 @@ weaponTypeList = get_filter_data("WeaponType")
 elementTypeList = get_filter_data("ElementType")
 
 # First call to get number of total data
-response = requests.post('https://sg-wiki-api.hoyolab.com/hoyowiki/wapi/get_entry_page_list', params={"filters":[],"menu_id":"2","page_num":1,"page_size":30,"use_es":True})
+response = requests.post('https://sg-wiki-api.hoyolab.com/hoyowiki/wapi/get_entry_page_list', 
+                         headers={"referer": "https://wiki.hoyolab.com/"},
+                         params={"filters":[],"menu_id":"2","page_num":1,"page_size":30,"use_es":True})
 totalData = response.json()['data']['total']
 
 # Second call to get all data at a time
-response = requests.post('https://sg-wiki-api.hoyolab.com/hoyowiki/wapi/get_entry_page_list', params={"filters":[],"menu_id":"2","page_num":1,"page_size":totalData,"use_es":True})
+response = requests.post('https://sg-wiki-api.hoyolab.com/hoyowiki/wapi/get_entry_page_list', 
+                         headers={"referer": "https://wiki.hoyolab.com/"},
+                         params={"filters":[],"menu_id":"2","page_num":1,"page_size":totalData,"use_es":True})
 dataList = response.json()['data']['list']
 
 # For loop all data to define in your own way
