@@ -17,3 +17,6 @@ Crawler build by Python to crawl data from Hoyowiki website
 > Below show each menu represent:
 >> (Represent type - menu ID)<br/>
 >> Character - 2 ; Weapon - 4 ; Artifact - 5 ; Monsters - 7 ; Resources - 9
+
+## Update
+2022-09-17 Get notify that 403 get on listing api, update existing crawler to handle that
