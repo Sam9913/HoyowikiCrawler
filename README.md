@@ -9,9 +9,11 @@ Crawler build by Python to crawl data from Hoyowiki website
 ## Progress
 1. Filter crawler :white_check_mark:
 2. Basic Character crawler :white_check_mark:
-3. List crawler :ballot_box_with_check:
-4. Detail crawler :ballot_box_with_check:
-5. Map filter crawler :ballot_box_with_check:
+3. Character crawler 
+   - Constellation crawler :white_check_mark:
+4. List crawler :ballot_box_with_check:
+5. Detail crawler :ballot_box_with_check:
+6. Map filter crawler :ballot_box_with_check:
 
 > Each crawler will be able to crawl different menu by given different menu ID. <br/>
 > Below show each menu represent:
